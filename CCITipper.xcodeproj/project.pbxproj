@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FC4BA4CF21F0D97600E873F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA4CE21F0D97600E873F8 /* AppDelegate.swift */; };
-		FC4BA4D121F0D97600E873F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA4D021F0D97600E873F8 /* ViewController.swift */; };
+		FC4BA4D121F0D97600E873F8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA4D021F0D97600E873F8 /* MainVC.swift */; };
 		FC4BA4D421F0D97600E873F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA4D221F0D97600E873F8 /* Main.storyboard */; };
 		FC4BA4D621F0D97700E873F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA4D521F0D97700E873F8 /* Assets.xcassets */; };
 		FC4BA4D921F0D97700E873F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA4D721F0D97700E873F8 /* LaunchScreen.storyboard */; };
+		FCEBA73F21F1D9A2003699DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBA73E21F1D9A2003699DD /* Model.swift */; };
+		FCEBA74121F1DEFB003699DD /* CalculVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBA74021F1DEFB003699DD /* CalculVC.swift */; };
+		FCEBA74321F1E889003699DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBA74221F1E889003699DD /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC4BA4CB21F0D97600E873F8 /* CCITipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCITipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4BA4CE21F0D97600E873F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC4BA4D021F0D97600E873F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC4BA4D021F0D97600E873F8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FC4BA4D321F0D97600E873F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC4BA4D521F0D97700E873F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4BA4D821F0D97700E873F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4BA4DA21F0D97700E873F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCEBA73E21F1D9A2003699DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FCEBA74021F1DEFB003699DD /* CalculVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculVC.swift; sourceTree = "<group>"; };
+		FCEBA74221F1E889003699DD /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		FC4BA4CD21F0D97600E873F8 /* CCITipper */ = {
 			isa = PBXGroup;
 			children = (
+				FCEBA74221F1E889003699DD /* Utilities.swift */,
 				FC4BA4CE21F0D97600E873F8 /* AppDelegate.swift */,
-				FC4BA4D021F0D97600E873F8 /* ViewController.swift */,
+				FC4BA4D021F0D97600E873F8 /* MainVC.swift */,
 				FC4BA4D221F0D97600E873F8 /* Main.storyboard */,
+				FCEBA74021F1DEFB003699DD /* CalculVC.swift */,
+				FCEBA73E21F1D9A2003699DD /* Model.swift */,
 				FC4BA4D521F0D97700E873F8 /* Assets.xcassets */,
 				FC4BA4D721F0D97700E873F8 /* LaunchScreen.storyboard */,
 				FC4BA4DA21F0D97700E873F8 /* Info.plist */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4BA4D121F0D97600E873F8 /* ViewController.swift in Sources */,
+				FCEBA73F21F1D9A2003699DD /* Model.swift in Sources */,
+				FC4BA4D121F0D97600E873F8 /* MainVC.swift in Sources */,
+				FCEBA74121F1DEFB003699DD /* CalculVC.swift in Sources */,
+				FCEBA74321F1E889003699DD /* Utilities.swift in Sources */,
 				FC4BA4CF21F0D97600E873F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G9A2V5Z8U;
 				INFOPLIST_FILE = CCITipper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G9A2V5Z8U;
 				INFOPLIST_FILE = CCITipper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
