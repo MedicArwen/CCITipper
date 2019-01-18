@@ -41,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3267A421F212420090AD87 /* Controleurs */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BA4D021F0D97600E873F8 /* MainVC.swift */,
+				FCEBA74021F1DEFB003699DD /* CalculVC.swift */,
+			);
+			path = Controleurs;
+			sourceTree = "<group>";
+		};
+		FC3267A521F212730090AD87 /* Utilitaires */ = {
+			isa = PBXGroup;
+			children = (
+				FCEBA74221F1E889003699DD /* Utilities.swift */,
+			);
+			path = Utilitaires;
+			sourceTree = "<group>";
+		};
 		FC4BA4C221F0D97600E873F8 = {
 			isa = PBXGroup;
 			children = (
@@ -60,17 +77,32 @@
 		FC4BA4CD21F0D97600E873F8 /* CCITipper */ = {
 			isa = PBXGroup;
 			children = (
-				FCEBA74221F1E889003699DD /* Utilities.swift */,
-				FC4BA4CE21F0D97600E873F8 /* AppDelegate.swift */,
-				FC4BA4D021F0D97600E873F8 /* MainVC.swift */,
+				FC3267A521F212730090AD87 /* Utilitaires */,
+				FC3267A421F212420090AD87 /* Controleurs */,
+				FCEBA74521F21206003699DD /* Vues */,
+				FCEBA74421F211F0003699DD /* Modeles */,
 				FC4BA4D221F0D97600E873F8 /* Main.storyboard */,
-				FCEBA74021F1DEFB003699DD /* CalculVC.swift */,
-				FCEBA73E21F1D9A2003699DD /* Model.swift */,
 				FC4BA4D521F0D97700E873F8 /* Assets.xcassets */,
 				FC4BA4D721F0D97700E873F8 /* LaunchScreen.storyboard */,
 				FC4BA4DA21F0D97700E873F8 /* Info.plist */,
 			);
 			path = CCITipper;
+			sourceTree = "<group>";
+		};
+		FCEBA74421F211F0003699DD /* Modeles */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BA4CE21F0D97600E873F8 /* AppDelegate.swift */,
+				FCEBA73E21F1D9A2003699DD /* Model.swift */,
+			);
+			path = Modeles;
+			sourceTree = "<group>";
+		};
+		FCEBA74521F21206003699DD /* Vues */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
