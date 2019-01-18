@@ -40,6 +40,7 @@ class CalculVC: UIViewController, UITextFieldDelegate {
         model.serviceLevel = sender.tag
         serviceLabel.text = model.serviceLabelText
         serviceQualityLabel.text = model.serviceQualityText
+        tipAmountLabel.text = doubleToString(myDouble: model.tipAmount, nbOfDigits: 2)! + " €"
         let starEmpty = UIImage(named: "etoile_creuse")
         let starFull = UIImage(named: "etoile_pleine")
         switch sender.tag {
@@ -61,6 +62,25 @@ class CalculVC: UIViewController, UITextFieldDelegate {
     // MARK: - Others funcs
     func calcul()
     {
-        if let amount = amountTextField, 
+        if let amount = amountTextField.text,let formatedAmount = stringToDouble(amount)
+        {
+            model.billAmount = formatedAmount
+            tipAmountLabel.text = doubleToString(myDouble: model.tipAmount, nbOfDigits: 2)!+" €"
+        }
+    }
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text?.count == 0
+        {
+            tipAmountLabel.text = "0.00 €"
+        }
+        else
+        {
+        calcul()
+        }
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // détecte la sortie du clavier graphique
+        self.view.endEditing(true)
     }
 }

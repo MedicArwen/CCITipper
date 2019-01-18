@@ -15,7 +15,7 @@ struct Model
     let arrayForServiceLevel = ["Service 10%","Service 15%","Service 20%"]
     let arrayForServiceQuality = ["Service moyen","Service correct","Très bon service"]
     
-    var tipAmont : Double {return billAmount * tipRates[serviceLevel]}
+    var tipAmount : Double {return billAmount * tipRates[serviceLevel]}
     var serviceLabelText : String { return arrayForServiceLevel[serviceLevel]}
     var serviceQualityText : String {return arrayForServiceQuality[serviceLevel]}
 }
